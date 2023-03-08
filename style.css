@@ -3,52 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(74, 72, 72);
 }
+
 .container {
-  width:fit-content;
-  margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border: black solid 5px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 5px solid black;
   padding: 20px;
   background-color: rgba(57, 57, 87, 0.356);
   border-radius: 10px;
 }
+
 .display {
-    border: solid black 5px;
-    height: 110px;
-    width: 350px;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #ccc;
-    padding: 10px;
-    background-color: rgb(66, 63, 45);
+  border: 5px solid black;
+  height: 110px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ccc;
+  padding: 10px;
+  background-color: rgb(66, 63, 45);
 }
+
 #buttons-box {
-    border: solid black 5px;
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.488);
+  border: 5px solid black;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.488);
 }
+
 #number-btns {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
-    margin: 10px;
-    background-color: rgb(43, 89, 89);
-  }
-  
-  #number-btns button {
-    font-size: 24px;
-    padding: 5px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 40px;
-    width: 100px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+  background-color: rgb(43, 89, 89);
+}
+
+#number-btns button {
+  font-size: 24px;
+  padding: 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+}
+
 .other-operators button {
   font-size: 24px;
   font-weight: 900;
@@ -58,26 +63,35 @@ body {
   border-radius: 5px;
   cursor: pointer;
   height: 50px;
-  width: 100px;
+  width: 100%;
   background-color: rgb(28, 73, 73);
 }
+
 .other-operators {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin: 10px;
 }
+
 .other-buttons {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin: 10px;
   margin-bottom: 0;
 }
+
 #other-buttons {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 92px);
+  grid-gap: 10px;
   margin: 10px;
-  padding-left: 5px;
+  margin-bottom: 0;
+  overflow: hidden;
 }
+
+
 #other-buttons button {
   cursor: pointer;
   padding: 5px;
@@ -85,13 +99,18 @@ body {
   width: 100px;
   border-radius: 5px;
   background-color: blueviolet;
+  display: inline-block;
 }
+
+
 #answer-el {
   text-align: end;
 }
+
 #expression-el {
   height: 40px;
 }
+
 #answer-el {
   font-size: 40px;
 }
