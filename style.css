@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
+  background-color: rgb(74, 72, 72);
 }
 .container {
   width:fit-content;
@@ -13,17 +13,18 @@ body {
   margin-right: auto;
   border: black solid 5px;
   padding: 20px;
-  background-color: rgba(0, 0, 255, 0.356);
+  background-color: rgba(57, 57, 87, 0.356);
   border-radius: 10px;
 }
 .display {
     border: solid black 5px;
-    height: 100px;
+    height: 110px;
     width: 350px;
     margin-bottom: 20px;
     font-size: 24px;
     color: #ccc;
     padding: 10px;
+    background-color: rgb(66, 63, 45);
 }
 #buttons-box {
     border: solid black 5px;
@@ -90,4 +91,7 @@ body {
 }
 #expression-el {
   height: 40px;
+}
+#answer-el {
+  font-size: 40px;
 }
